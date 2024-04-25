@@ -15,7 +15,7 @@ def user_input_features():
     Gender = st. sidebar.selectbox('Gender', ['Male', 'Female'])
     MaritalStatus = st.sidebar.selectbox('Marital Status', ['Single', 'Married','Prefer not to say'])
     Occupation = st. sidebar.selectbox('Occupation', ['Student',' Employee','House wife','Self Employeed'])
-    MonthlyIncome = st. sidebar.selectbox('Monthly Income', ['No Income', '10001 to 25000', '25001 to 50000',' Below Rs.10000'.'More than 50000',])
+    MonthlyIncome = st. sidebar.selectbox('Monthly Income', ['No Income', '10001 to 25000', '25001 to 50000',' Below Rs.10000','More than 50000',])
     EducationalQualifications = st. sidebar.selectbox('Educational Qualifications', ['Post Graduate', 'Graduate','Ph.D','School','Uneducated'])
     FamilySize = st.sidebar.slider('Family Size', 1, 6, 2)
     Output = st. sidebar.selectbox('Output', ['Yes', 'No'])
