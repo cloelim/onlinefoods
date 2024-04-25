@@ -2,10 +2,12 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+
 st.write("""
 # Online Food feedback prediction
 This app predicts the **Feedback for the Online Foods** type!
 """)
+
 
 st.sidebar.header('Input')
 def user_input_features():
@@ -26,7 +28,6 @@ def user_input_features():
             'Family size':FamilySize,
             'Output': Output}
 
-
     features = pd.DataFrame(data, index=[0])
     return features
 
@@ -44,7 +45,7 @@ df['Occupation']= label_encoder.fit_transform(df['Occupation'])
 df['Monthly Income']= label_encoder.fit_transform(df['Monthly Income'])
 df['Educational Qualifications']= label_encoder.fit_transform(df['Educational Qualifications'])
 df['Output']= label_encoder.fit_transform(df['Output'])
-
+df['Feedback']= label_encoder.fit_transform(df['Feedback'])
 
 loaded_model = pickle.load(open("onlinefoods.h5", "rb"))
 
