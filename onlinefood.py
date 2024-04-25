@@ -35,15 +35,6 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-from sklearn import preprocessing
-label_encoder = preprocessing.LabelEncoder()
-# Encode labels in column 'species'.
-df['Gender']= label_encoder.fit_transform(df['Gender'])
-df['Marital Status']= label_encoder.fit_transform(df['Marital Status'])
-df['Occupation']= label_encoder.fit_transform(df['Occupation'])
-df['Monthly Income']= label_encoder.fit_transform(df['Monthly Income'])
-df['Educational Qualifications']= label_encoder.fit_transform(df['Educational Qualifications'])
-df['Output']= label_encoder.fit_transform(df['Output'])
 
 loaded_model = pickle.load(open("onlinefoods.h5", "rb"))
 
