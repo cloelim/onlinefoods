@@ -47,7 +47,6 @@ df['Occupation']= label_encoder.fit_transform(df['Occupation'])
 df['Monthly Income']= label_encoder.fit_transform(df['Monthly Income'])
 df['Educational Qualifications']= label_encoder.fit_transform(df['Educational Qualifications'])
 df['Output']= label_encoder.fit_transform(df['Output'])
-df['Feedback']= label_encoder.fit_transform(df['Feedback'])
 
 
 loaded_model = pickle.load(open("onlinefoods.h5", "rb"))
