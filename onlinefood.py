@@ -25,7 +25,7 @@ def user_input_features():
             'Occupation': Occupation,
             'Monthly Income': MonthlyIncome,
             'Educational Qualifications' : EducationalQualifications,
-            'Family size':Family size,
+            'Family size':FamilySize,
             'Output': Output}
 
 
